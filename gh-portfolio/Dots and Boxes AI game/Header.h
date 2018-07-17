@@ -431,7 +431,7 @@ public:
 				input = checkPointDir(good.back());
 				AddEdge(input.point, input.dir);
 				checker(input.point, input.dir);
-				printer();
+				//printer();
 				if (!good.empty()) {
 					good.pop_back();
 					cost++; //increase cost
@@ -455,7 +455,7 @@ public:
 
 				AddEdge(possible.point, possible.dir); //adds bad edge
 				checker(possible.point, possible.dir);
-				printer();
+				//printer();
 				//bad.clear();
 			}
 			if(cost != 0)

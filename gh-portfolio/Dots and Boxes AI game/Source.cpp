@@ -27,7 +27,7 @@ int main()
 	{
 		score = game.scoreP1 + game.scoreP2; //gets total score
 		cout << endl;
-		for (int x = 0; x< SIZE; x++) //debug thing, displays dot value
+		/*for (int x = 0; x< SIZE; x++) //debug thing, displays dot value
 		{
 			if (x%SX == 0)
 				cout << endl;
@@ -42,7 +42,7 @@ int main()
 				cout << endl;
 			cout << game.counter[x]; 
 
-		}//*/
+		}*/
 		cout << endl << "Player " << game.turn % 2 + 1 << "'s turn\n";
 		if (game.turn % 2 + 1 == playerPos) { //checks if player's turn
 			game.printer(); //prints board
